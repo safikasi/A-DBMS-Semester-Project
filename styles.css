@@ -1,0 +1,88 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card-body {
+    flex: 1 1 auto;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.stock-low {
+    color: #dc3545;
+}
+
+.stock-medium {
+    color: #fd7e14;
+}
+
+.stock-high {
+    color: #198754;
+}
+
+.category-badge {
+    text-transform: capitalize;
+}
+
+.btn-action {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Admin Panel Styles */
+.stats-card {
+    border-left: 5px solid;
+    background-color: white;
+}
+
+.stats-card.products {
+    border-color: #0d6efd;
+}
+
+.stats-card.users {
+    border-color: #198754;
+}
+
+.stats-card.sales {
+    border-color: #fd7e14;
+}
+
+.stats-card.revenue {
+    border-color: #6f42c1;
+}
+
+.stats-icon {
+    font-size: 2.5rem;
+    opacity: 0.7;
+}
